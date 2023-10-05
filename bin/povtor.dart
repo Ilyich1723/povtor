@@ -5,5 +5,6 @@ void main(List<String> arguments) async {
   String url ='https://dummyjson.com/products';
   var response = await httpClient.get(url);
 
-  print(response.data);
+  Map<String,dynamic> json = response.data;
+  
 }
