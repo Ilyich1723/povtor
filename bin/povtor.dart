@@ -1,5 +1,9 @@
-import 'package:povtor/povtor.dart' as povtor;
+import 'package:dio/dio.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${povtor.calculate()}!');
+void main(List<String> arguments) async {
+  Dio httpClient = Dio();
+  String url ='https://dummyjson.com/products';
+  var response = await httpClient.get(url);
+
+  print(response.data);
 }
