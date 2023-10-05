@@ -7,7 +7,7 @@ part 'product.g.dart';
 class Product with _$Product {
 
   factory Product({
-  @Default(0) id,
+  @Default(0) int id,
   required String title,
   }) = _Product;
 
