@@ -9,8 +9,8 @@ part 'getProd.g.dart';
 class GetProd with _$GetProd {
 
   factory GetProd({
-   @JsonKey(name: "products") @Default([])<Product>p,
-    @Default(O) total,
+   @JsonKey(name: "products") @Default([])List<Product>p,
+    @Default(0) total,
     @Default(0) skip,
     @Default(0) limit,
 
