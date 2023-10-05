@@ -8,9 +8,7 @@ class Product with _$Product {
 
   factory Product({
   @Default(0) id,
-   required title,
-
-
+  required String title,
   }) = _Product;
 
   factory Product.fromJson(Map<String, dynamic> json) => _$ProductFromJson(json);
