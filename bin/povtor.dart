@@ -8,9 +8,9 @@ void main(List<String> arguments) async {
   var response = await httpClient.get(url);
 
  GetProd getProd = GetProd.fromJson(response.data);
- 
-  
+  int count =0;
   for (var el in getProd.p) {
-    print(el.title);
+    count+=el.id;
   }
+  print(count);
 }
